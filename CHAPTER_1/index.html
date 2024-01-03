@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- #first means element which has id="first"  & .bg-blue means ele that has bg-blue class-->
+    <!--
+    <style>
+        #first{    
+          background-color: aqua;  
+        }
+        .bg-blue{
+            background: blue;
+            color: white;
+        }
+    </style> -->
+    <link rel="stylesheet"href="style.css">
+</head>
+
+<body>
+    <!--style attribute is not recommanded--> <!--every element must have unique id-->
+    <!-- <div id="first" style="background-color: aqua;"> 
+        first
+    </div> -->
+    <div id="second"> <!--same id is not allowed-->
+        second
+    </div>
+    <section class="red"> <!--one class can have multiple elements-->
+        red
+    </section>
+    <section class="red bg-blue border-purple"> <!--one element can have multiple classes-->
+        red bg-blue border-purple
+    </section>
+</body>
+
+</html>
