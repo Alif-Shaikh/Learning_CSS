@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            font: size 34px;;
+        }
+        .box{
+            /* font-size: 12px; */
+            /* font-size: 3em;  */
+            /*3Xsize of parent font i.e para font of 16px -->default value of para taken if not specified separately*/
+            font-size: 1.5rem;
+            /*3Xsize of root ele font i.e html tag font of 16px*/
+            background-color: red;
+        }
+        .box2{
+            /* viewport--->page size in general */
+            background-color: aqua;
+            width: 334px;
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><p>This is a paragraph</p>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora culpa iusto eius velit veritatis in enim odit placeat id sapiente iste, voluptatibus modi consequatur ratione esse laborum saepe perferendis explicabo, illo quis vero rerum.
+        </div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consequuntur perferendis officia.</div>
+    </div>
+</body>
+</html>
