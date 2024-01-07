@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 146px;
+
+        }
+        .box{
+            border: 2px solid black;
+            /* transform: translate(34px); */
+            /* transform: translate(134px,56px) rotate(0.5turn); */
+            /* transform: translate(134px,56px) rotate(45deg); */
+            /* transform: translate(234px,56px); */
+            /* transform-origin: 0; */
+            /* transform: scaleX(2); */
+             /* transform: scaleY(2); */
+            /* transform: scale(3,5); */
+             /* transform: skew(4deg,6deg); */
+            display: inline-block;
+            /* transform: rotateX(45deg); */
+
+        }
+        
+        img{
+            width: 146px;
+            height: 455px;
+            /* transition-property: width;
+            transition-duration: .5s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            /* transition: width .5s ease-in 2s; */
+            transition: width 1s ease-in-out,height 2s ease-in;
+        }
+        /* img:hover{
+            width: 100px;
+        } */
+    </style>
+   
+</head>
+<body>
+    <div>
+    <div class="container">
+        <div class="box">
+         <image id="myImage" src=https://media.istockphoto.com/id/1202227531/photo/beautiful-emerald-colored-glacial-rivers-of-iceland-taken-from-a-helicopter.webp?s=1024x1024&w=is&k=20&c=aGZu1yFSgqeEQWXR1JyhwfHJbfhPp14Ic39seOdBq3Q=></image> 
+         <button id="btn">Toggle</button>  
+        </div>
+    </div>
+    
+</body>
+<script>
+myImage.style.width = '146px';
+myImage.style.width = '16px';
+    btn.addEventListener("click",()=>{
+        myImage.style.height = '456px';
+       if(myImage.style.width==='546px') {
+        myImage.style.width = "146px";
+       
+       }
+       else if(myImage.style.width = '146px'){ 
+        myImage.style.width="546px";
+      
+       }
+    })
+        </script>
+</html>
